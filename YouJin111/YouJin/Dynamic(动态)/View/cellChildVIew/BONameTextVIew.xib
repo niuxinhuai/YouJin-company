@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BONameTextVIew"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BONameTextVIew">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="89"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-o7-FtB">
+                    <rect key="frame" x="10" y="15" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="NAg-Ql-IM5"/>
+                        <constraint firstAttribute="height" constant="45" id="dsE-yS-v6j"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称ID昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-Pe-MBo">
+                    <rect key="frame" x="65" y="20" width="71" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.31764705882352939" green="0.51764705882352935" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1小时前 · 来自：股票涨涨涨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJi-jQ-51Q">
+                    <rect key="frame" x="65" y="47" width="151" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如何正确的确定价值观和消费观：把简单的事情重复做，成功来的时候，挡都挡不住，把理财当成一种习惯。任何情况下，能不动用积蓄，就不动用积蓄，哈哈哈哈" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBx-YO-K2z">
+                    <rect key="frame" x="10" y="75" width="372" height="9"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OWb-o7-FtB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="3MS-pn-oR0"/>
+                <constraint firstItem="nJi-jQ-51Q" firstAttribute="top" secondItem="KgJ-Pe-MBo" secondAttribute="bottom" constant="10" id="Lma-1R-A1E"/>
+                <constraint firstItem="OWb-o7-FtB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="OiS-aE-wFl"/>
+                <constraint firstItem="nJi-jQ-51Q" firstAttribute="leading" secondItem="OWb-o7-FtB" secondAttribute="trailing" constant="10" id="PB0-Rb-XFV"/>
+                <constraint firstAttribute="bottom" secondItem="xBx-YO-K2z" secondAttribute="bottom" constant="5" id="rwY-0e-92M"/>
+                <constraint firstItem="KgJ-Pe-MBo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="sVW-y6-6Hz"/>
+                <constraint firstItem="KgJ-Pe-MBo" firstAttribute="leading" secondItem="OWb-o7-FtB" secondAttribute="trailing" constant="10" id="sbE-NM-Btm"/>
+                <constraint firstItem="xBx-YO-K2z" firstAttribute="top" secondItem="OWb-o7-FtB" secondAttribute="bottom" constant="15" id="ySg-TP-wHf"/>
+                <constraint firstAttribute="trailing" secondItem="xBx-YO-K2z" secondAttribute="trailing" id="z1d-K7-gFg"/>
+                <constraint firstItem="xBx-YO-K2z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zm0-gN-kkb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentLabel" destination="xBx-YO-K2z" id="FDf-Ay-BGU"/>
+                <outlet property="iconImage" destination="OWb-o7-FtB" id="3yx-Wm-H71"/>
+                <outlet property="nameLabel" destination="KgJ-Pe-MBo" id="2M7-k8-8TZ"/>
+                <outlet property="timeComeLabel" destination="nJi-jQ-51Q" id="dZv-oW-Ef8"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="-213.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_touxiang" width="90" height="90"/>
+    </resources>
+</document>

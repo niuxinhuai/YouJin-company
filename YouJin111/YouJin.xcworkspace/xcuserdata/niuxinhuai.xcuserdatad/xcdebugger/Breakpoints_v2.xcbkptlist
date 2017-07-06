@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YouJin/HomePage(&#x9996;&#x9875;)/Controller/secondaryController/PopularPlatformForDetails&#x5e73;&#x53f0;&#x8be6;&#x60c5;/InformationPlatform&#x66f4;&#x591a;&#x4fe1;&#x606f;&#x5e73;&#x53f0;/InformationPlatformViewController.m"
+            timestampString = "519547925.042835"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-tableView:heightForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YouJin/HomePage(&#x9996;&#x9875;)/Controller/secondaryController/PopularPlatformForDetails&#x5e73;&#x53f0;&#x8be6;&#x60c5;/InformationPlatform&#x66f4;&#x591a;&#x4fe1;&#x606f;&#x5e73;&#x53f0;/InformationPlatform&#x6a21;&#x5757;View/OperationsTeamTableViewCell.m"
+            timestampString = "519547969.783966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-setItem:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

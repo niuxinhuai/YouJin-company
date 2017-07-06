@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FCn-aI-zq8" customClass="UserPageBar">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miW-VI-yuX">
+                    <rect key="frame" x="133.5" y="0.0" width="133" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="我的发表"/>
+                    <state key="selected" backgroundImage="btn_navbg"/>
+                    <connections>
+                        <action selector="publishAction:" destination="FCn-aI-zq8" eventType="touchUpInside" id="e2o-yy-H6z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKN-5a-swc">
+                    <rect key="frame" x="0.0" y="0.0" width="132.5" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="我的点评"/>
+                    <state key="selected" backgroundImage="btn_navbg"/>
+                    <connections>
+                        <action selector="remarkAction:" destination="FCn-aI-zq8" eventType="touchUpInside" id="ihH-BR-Ojv"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qY1-re-MmK">
+                    <rect key="frame" x="132.5" y="6" width="1" height="38"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.72156862749999995" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="pW4-Ws-gi1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5P-3j-Tac">
+                    <rect key="frame" x="266.5" y="6" width="1" height="38"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.72156862749999995" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-fg-ZFg">
+                    <rect key="frame" x="267.5" y="0.0" width="132.5" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="我的评论"/>
+                    <state key="selected" backgroundImage="btn_navbg"/>
+                    <connections>
+                        <action selector="commentAction:" destination="FCn-aI-zq8" eventType="touchUpInside" id="X1e-0F-R9g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1764705882" green="0.51764705879999995" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="iNv-fg-ZFg" firstAttribute="width" secondItem="BKN-5a-swc" secondAttribute="width" id="7Op-hv-SSy"/>
+                <constraint firstItem="iNv-fg-ZFg" firstAttribute="leading" secondItem="X5P-3j-Tac" secondAttribute="trailing" id="Kpl-hu-gte"/>
+                <constraint firstItem="X5P-3j-Tac" firstAttribute="height" secondItem="qY1-re-MmK" secondAttribute="height" id="MBD-18-ZKr"/>
+                <constraint firstItem="X5P-3j-Tac" firstAttribute="centerY" secondItem="FCn-aI-zq8" secondAttribute="centerY" id="Msj-kE-N1K"/>
+                <constraint firstItem="miW-VI-yuX" firstAttribute="width" secondItem="BKN-5a-swc" secondAttribute="width" id="QvY-A3-Kk1"/>
+                <constraint firstItem="qY1-re-MmK" firstAttribute="centerY" secondItem="FCn-aI-zq8" secondAttribute="centerY" id="RRH-lJ-FEy"/>
+                <constraint firstItem="iNv-fg-ZFg" firstAttribute="centerY" secondItem="FCn-aI-zq8" secondAttribute="centerY" id="WiO-RM-3Ed"/>
+                <constraint firstItem="X5P-3j-Tac" firstAttribute="leading" secondItem="miW-VI-yuX" secondAttribute="trailing" id="ZCM-6Q-SUg"/>
+                <constraint firstItem="BKN-5a-swc" firstAttribute="leading" secondItem="FCn-aI-zq8" secondAttribute="leading" id="aA7-eU-R4J"/>
+                <constraint firstItem="qY1-re-MmK" firstAttribute="leading" secondItem="BKN-5a-swc" secondAttribute="trailing" id="cQX-6S-w31"/>
+                <constraint firstItem="miW-VI-yuX" firstAttribute="top" secondItem="FCn-aI-zq8" secondAttribute="top" id="clC-NX-gGZ"/>
+                <constraint firstItem="iNv-fg-ZFg" firstAttribute="top" secondItem="FCn-aI-zq8" secondAttribute="top" id="el4-v4-Jwy"/>
+                <constraint firstItem="miW-VI-yuX" firstAttribute="centerY" secondItem="FCn-aI-zq8" secondAttribute="centerY" id="gKL-0h-dbI"/>
+                <constraint firstAttribute="bottom" secondItem="BKN-5a-swc" secondAttribute="bottom" id="iBF-PG-gOo"/>
+                <constraint firstItem="qY1-re-MmK" firstAttribute="top" secondItem="FCn-aI-zq8" secondAttribute="top" constant="6" id="nUc-p0-Gli"/>
+                <constraint firstItem="BKN-5a-swc" firstAttribute="top" secondItem="FCn-aI-zq8" secondAttribute="top" id="olN-ZW-0qR"/>
+                <constraint firstItem="X5P-3j-Tac" firstAttribute="width" secondItem="qY1-re-MmK" secondAttribute="width" id="r8U-lV-zsc"/>
+                <constraint firstItem="qY1-re-MmK" firstAttribute="centerY" secondItem="FCn-aI-zq8" secondAttribute="centerY" id="u40-kL-V9q"/>
+                <constraint firstItem="miW-VI-yuX" firstAttribute="leading" secondItem="qY1-re-MmK" secondAttribute="trailing" id="yQ7-Wn-0lY"/>
+                <constraint firstAttribute="trailing" secondItem="iNv-fg-ZFg" secondAttribute="trailing" id="z8y-Zz-MYc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentButton" destination="iNv-fg-ZFg" id="vJ1-jy-YpB"/>
+                <outlet property="publishButton" destination="miW-VI-yuX" id="ZHN-bx-Mkp"/>
+                <outlet property="remarkButton" destination="BKN-5a-swc" id="f1R-xr-o8H"/>
+            </connections>
+            <point key="canvasLocation" x="129" y="-301"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_navbg" width="125" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

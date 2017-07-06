@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'YouJin' do
+ 
+   pod 'AFNetworking', '~> 3.1.0'
+#   pod 'SDCycleScrollView', '~> 1.65'
+   pod 'Masonry', '~> 1.0.2'
+   pod 'MJExtension', '~> 3.0.13'
+   pod 'SVProgressHUD', '~> 2.1.2'
+   pod 'MJRefresh', '~> 3.1.12'
+   pod 'UMengAnalytics-NO-IDFA'	
+   pod "Qiniu"
+   pod 'XHLaunchAd'
+   pod 'SVProgressHUD', "~> 2.1.2"
+   pod 'QIYU_iOS_SDK',  '~> 3.6.0'
+   pod 'IQKeyboardManager'
+   pod 'ReactiveCocoa', '~> 2.3.1'
+   pod 'SDWebImage', '~>3.7.3'
+#   pod 'ShareSDK3'
+#   pod 'MobLink', '~>1.1.0'
+#   pod 'SMSSDK'
+
+end

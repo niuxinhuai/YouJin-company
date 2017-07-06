@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewIndustryDataViewController">
+            <connections>
+                <outlet property="leftSectionBar" destination="fgn-SI-LfT" id="MNp-2m-kck"/>
+                <outlet property="redPacket" destination="ycH-fK-ncX" id="rPV-P9-LZF"/>
+                <outlet property="redPacketCenterXToSuperRight" destination="Xy7-qS-Sdv" id="u3D-Ci-zWR"/>
+                <outlet property="rightSectionBar" destination="fV7-jZ-W5i" id="GFZ-J0-ool"/>
+                <outlet property="rightSectionLeadingToLeftSectionRight" destination="G1q-sm-oyw" id="cQA-Mf-1K4"/>
+                <outlet property="sectionContainer" destination="8ng-IW-Owr" id="PJa-Xg-N8O"/>
+                <outlet property="topBar" destination="Lez-vh-zG9" id="t69-3A-IXR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lez-vh-zG9" customClass="HomeLineHeadBarView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="v0M-YU-463"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-IW-Owr">
+                    <rect key="frame" x="0.0" y="50" width="375" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-SI-LfT" customClass="ConditionSelectedBar">
+                            <rect key="frame" x="0.0" y="0.0" width="85" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="eci-mk-5g1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fV7-jZ-W5i" customClass="ConditionSelectedBar">
+                            <rect key="frame" x="85" y="0.0" width="480" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="480" id="Z1h-Bl-k9F"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="fV7-jZ-W5i" firstAttribute="leading" secondItem="fgn-SI-LfT" secondAttribute="trailing" id="G1q-sm-oyw"/>
+                        <constraint firstItem="fV7-jZ-W5i" firstAttribute="top" secondItem="8ng-IW-Owr" secondAttribute="top" id="RQc-9O-OBo"/>
+                        <constraint firstAttribute="bottom" secondItem="fV7-jZ-W5i" secondAttribute="bottom" id="VB1-LZ-7m6"/>
+                        <constraint firstAttribute="bottom" secondItem="fgn-SI-LfT" secondAttribute="bottom" id="bok-vB-mp1"/>
+                        <constraint firstAttribute="height" constant="45" id="dxd-mH-UZ3"/>
+                        <constraint firstItem="fgn-SI-LfT" firstAttribute="leading" secondItem="8ng-IW-Owr" secondAttribute="leading" id="fNd-rM-xcC"/>
+                        <constraint firstItem="fgn-SI-LfT" firstAttribute="top" secondItem="8ng-IW-Owr" secondAttribute="top" id="iap-AJ-dLW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycH-fK-ncX">
+                    <rect key="frame" x="292.5" y="553" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ycH-fK-ncX" secondAttribute="height" id="mmr-zG-Vqo"/>
+                        <constraint firstAttribute="width" constant="65" id="qQ5-tR-7ki"/>
+                    </constraints>
+                    <state key="normal" image="img_hongbao"/>
+                    <connections>
+                        <action selector="redPacketAction:" destination="-1" eventType="touchUpInside" id="fHP-Ch-Jm3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ycH-fK-ncX" firstAttribute="width" secondItem="ycH-fK-ncX" secondAttribute="height" id="3rK-Qv-dgt"/>
+                <constraint firstItem="8ng-IW-Owr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FPV-tU-HHB"/>
+                <constraint firstItem="8ng-IW-Owr" firstAttribute="top" secondItem="Lez-vh-zG9" secondAttribute="bottom" id="ILn-bE-m43"/>
+                <constraint firstAttribute="trailing" secondItem="8ng-IW-Owr" secondAttribute="trailing" id="LvM-p0-KGb"/>
+                <constraint firstAttribute="trailing" secondItem="Lez-vh-zG9" secondAttribute="trailing" id="Ozx-Nq-lMu"/>
+                <constraint firstAttribute="trailing" secondItem="ycH-fK-ncX" secondAttribute="centerX" constant="50" id="Xy7-qS-Sdv"/>
+                <constraint firstAttribute="bottom" secondItem="ycH-fK-ncX" secondAttribute="bottom" constant="49" id="awg-jb-WUg"/>
+                <constraint firstItem="Lez-vh-zG9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gWi-ft-Oia"/>
+                <constraint firstItem="Lez-vh-zG9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hiP-N0-jne"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_hongbao" width="65" height="65"/>
+    </resources>
+</document>

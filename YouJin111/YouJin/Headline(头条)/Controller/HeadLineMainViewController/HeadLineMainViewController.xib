@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeadLineMainViewController">
+            <connections>
+                <outlet property="searchBar" destination="qn6-L1-l5v" id="rNc-Vv-6nm"/>
+                <outlet property="searchBarWidth" destination="In3-Sa-JqK" id="Ylt-Sp-dcY"/>
+                <outlet property="topBackgroundView" destination="dYJ-k1-CYy" id="KYg-59-9IF"/>
+                <outlet property="topView" destination="OJq-nC-DFf" id="aa0-1Z-SKn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJq-nC-DFf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYJ-k1-CYy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                            <color key="backgroundColor" red="0.1764705882352941" green="0.51764705882352935" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZc-5U-qeZ">
+                            <rect key="frame" x="-5" y="20" width="80" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="有金号"/>
+                            <connections>
+                                <action selector="goldSelectedAction:" destination="-1" eventType="touchUpInside" id="qtS-g6-Ijr"/>
+                            </connections>
+                        </button>
+                        <searchBar contentMode="redraw" placeholder="搜索你感兴趣的文章" translatesAutoresizingMaskIntoConstraints="NO" id="qn6-L1-l5v">
+                            <rect key="frame" x="75" y="27.5" width="225" height="29"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="225" id="In3-Sa-JqK"/>
+                                <constraint firstAttribute="height" constant="29" id="xUA-YL-VOh"/>
+                            </constraints>
+                            <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-sk-egu">
+                            <rect key="frame" x="300" y="20" width="80" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="common_icon_fatie"/>
+                            <connections>
+                                <action selector="publishAction:" destination="-1" eventType="touchUpInside" id="qhS-6l-dzp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="PTH-sk-egu" secondAttribute="bottom" id="58n-yK-YK2"/>
+                        <constraint firstAttribute="trailing" secondItem="PTH-sk-egu" secondAttribute="trailing" constant="-5" id="9bW-e7-yH8"/>
+                        <constraint firstItem="PTH-sk-egu" firstAttribute="leading" secondItem="qn6-L1-l5v" secondAttribute="trailing" id="ArR-8Z-qPF"/>
+                        <constraint firstAttribute="bottom" secondItem="dYJ-k1-CYy" secondAttribute="bottom" id="AtC-4H-pU2"/>
+                        <constraint firstItem="qn6-L1-l5v" firstAttribute="centerY" secondItem="vZc-5U-qeZ" secondAttribute="centerY" id="Dcr-JV-Xjh"/>
+                        <constraint firstAttribute="trailing" secondItem="dYJ-k1-CYy" secondAttribute="trailing" id="E0S-MX-iDQ"/>
+                        <constraint firstAttribute="bottom" secondItem="vZc-5U-qeZ" secondAttribute="bottom" id="ICH-Dy-viO"/>
+                        <constraint firstItem="dYJ-k1-CYy" firstAttribute="top" secondItem="OJq-nC-DFf" secondAttribute="top" id="JIr-WR-7g7"/>
+                        <constraint firstItem="qn6-L1-l5v" firstAttribute="centerX" secondItem="OJq-nC-DFf" secondAttribute="centerX" id="MB1-PD-wjc"/>
+                        <constraint firstItem="PTH-sk-egu" firstAttribute="centerY" secondItem="vZc-5U-qeZ" secondAttribute="centerY" id="ROD-mz-3GI"/>
+                        <constraint firstAttribute="height" constant="64" id="ZkB-XY-jhd"/>
+                        <constraint firstItem="qn6-L1-l5v" firstAttribute="leading" secondItem="vZc-5U-qeZ" secondAttribute="trailing" id="gvO-ke-vGP"/>
+                        <constraint firstItem="vZc-5U-qeZ" firstAttribute="leading" secondItem="OJq-nC-DFf" secondAttribute="leading" constant="-5" id="ksT-VX-xTg"/>
+                        <constraint firstItem="vZc-5U-qeZ" firstAttribute="top" secondItem="OJq-nC-DFf" secondAttribute="top" constant="20" id="rWD-4x-GHm"/>
+                        <constraint firstItem="dYJ-k1-CYy" firstAttribute="leading" secondItem="OJq-nC-DFf" secondAttribute="leading" id="wfS-d7-0pi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OJq-nC-DFf" secondAttribute="trailing" id="8Nd-gC-Dq9"/>
+                <constraint firstItem="OJq-nC-DFf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ABe-r4-Eec"/>
+                <constraint firstItem="OJq-nC-DFf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ukj-dr-Ixc"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="101.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_icon_fatie" width="20" height="20"/>
+    </resources>
+</document>

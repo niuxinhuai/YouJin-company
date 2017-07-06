@@ -1,0 +1,87 @@
+//
+//  YouJin.pch
+//  YouJin
+//
+//  Created by 柚今科技02 on 2017/2/5.
+//  Copyright © 2017年 youjin. All rights reserved.
+//
+//第三方的类库
+#import "UIBarButtonItem+Btn.h"
+#import "UIView+Frame.h"
+#import "AFHTTPSessionManager+Manager.h"
+#import "UIColor+Scale.h"
+#import "Masonry.h"
+#import "SDCycleScrollView.h"
+#import <MJExtension/MJExtension.h>
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "UIColor+Scale.h"
+#import "UIScreen+Utilities.h"
+#import "SVProgressHUD.h"
+#import <IQKeyboardManager.h>
+//自己写的公用的一些类的头文件
+#import "BOSetupTitleView.h"
+#import "UIImage+UIColor.h"
+//登陆界面
+#import "BONoteVerifyLogiin.h"
+#import "YoujinPostKey.pch"
+
+#define ISTEST
+#ifdef ISTEST
+    #define BASEURL @"http://120.27.226.32/index_wx.php/" //测试url公网
+    #define BASEWEBURl @"http://120.27.226.32/" //测试web网页地址
+    #define QYAppKey @"f506b56c949580ade492f5934391b313"
+    #define TopDetailUrl @"http://120.27.226.32/mobile/page/headlineShare_comment.html?"
+    #define TopDetailShareUrl @"http://120.27.226.32/mobile/page/headlineShare.html?"
+#else
+    #define BASEURL @"https://www.youjin360.com/index_wx.php/" //正式url内网
+    #define BASEWEBURl @"https://www.youjin360.com/" //正式web网页地址
+    #define QYAppKey @"f506b56c949580ade492f5934391b313"
+    #define TopDetailUrl @"http://www.youjin360.com/mobile/page/headlineShare_comment.html?"
+    #define TopDetailShareUrl @"http://www.youjin360.com/mobile/page/headlineShare.html?"
+#endif
+
+#define APP_ID @"1232500861"
+#define StatementUrl @"http://120.27.226.32/mobile/page/disclaimer.html"
+#define ShareSDKKey @"1c3e479e88802"
+#define QNTokenUrl @"https://www.youjin360.com/qiniu/examples/upload_token.php"
+#define ThumbnailSuffix @"?imageMogr2/thumbnail/500x/strip/quality/75/format/webp"
+#define perchImage [UIImage imageNamed:@"img_zhanwei_b"]
+#define BOScreenH [UIScreen mainScreen].bounds.size.height
+#define BOScreenW [UIScreen mainScreen].bounds.size.width
+#define BOPictureW 375.0
+#define BOPictureH 667.0
+#define tokenString [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]
+#define USERUID [[NSUserDefaults standardUserDefaults] objectForKey:@"uid"]
+#define USERName [[NSUserDefaults standardUserDefaults] objectForKey:@"uname"]
+#define USERMobile [[NSUserDefaults standardUserDefaults] objectForKey:@"mobile"]
+#define USERSid [[NSUserDefaults standardUserDefaults] objectForKey:@"sid"]
+#define firstChange [[NSUserDefaults standardUserDefaults] objectForKey:@"firstChange"]
+#define twoChange [[NSUserDefaults standardUserDefaults] objectForKey:@"twoChange"]
+#define USERType [[NSUserDefaults standardUserDefaults] objectForKey:@"type"]
+#define USERSex [[NSUserDefaults standardUserDefaults] objectForKey:@"sex"]
+#define USERImage [[NSUserDefaults standardUserDefaults] objectForKey:@"head_image"]
+#define BOWidthRate BOScreenW/BOPictureW
+#define BOHeightRate BOScreenH/BOPictureH
+#define CachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+#define BOColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
+#define iPhone7P (BOScreenH == 1080)
+#define iPhone7 (BOScreenH == 750)
+#define iPhone6P (BOScreenH == 736)
+#define iPhone6 (BOScreenH == 667)
+#define iPhone5 (BOScreenH == 568)
+#define iPhone4 (BOScreenH == 480)
+#define CachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+//自定义Log
+#ifdef DEBUG //调试
+
+#define BOLog(...) NSLog(__VA_ARGS__)
+
+#else //发布
+
+#define BOLog(...)
+
+#endif
+
